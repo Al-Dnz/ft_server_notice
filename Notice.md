@@ -26,8 +26,10 @@ to test.
 ## TESTING
 
 To connect to PhpMyAdmin
+```
 user: admin
 password: 1234
+```
 
 ### NEW HTML PAGE
 Go on 
@@ -36,14 +38,18 @@ There 's nothing.
 Now go on 
 `cd tests`
 and run
-`./test_html.sh`
+```
+./test_html.sh
+```
 and refresh the page.
 
 ### DATABASE
 To test db launch 
 `cd ./tests`
 and
-`./test_db.sh`
+```
+./test_db.sh
+```
 This will create a new table inside the current database.
 A new web page will be created to show this new datas
 [https://localhost/wordpress/42_projects.php](https://localhost/wordpress/42_projects.php)
@@ -51,7 +57,9 @@ And this new table will of course appear inside phpmyadmin dashboard.
 
 ### AUTOINDEX
 To test autoindex, at the root of the container
-`./autoindex.sh`
+```
+./autoindex.sh
+```
 and refresh your page on your browser.
 When autoindex is OFF you will redirect on the wordpress page.
 You can relaunch this command to switch the autoindex and observe the behaviour of your localhost.
